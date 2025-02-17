@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    z-index: -1;
+    height: 100%;
+}
+
+.background{
+    transform: translateZ(-40px) scale(5);
+}
+
+.foreground{
+    transform: translateZ(-20px) scale(3);
+}
+
+.background, .foreground{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+h1{
+    position: absolute;
+    font-size: 10rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    top: 5rem;
+    letter-spacing: 4px;
+    text-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+section {
+    background-color: rgb(45, 45, 45);
+    color: white;
+    padding: 5rem 0;
+}
+
+.secheading{
+    font-size: 5rem;
+    padding:0 10rem;
+}
+
+.text{
+    font-size: 1.5rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
+}
+
+.bg{
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 500px;
+}
+
+.des{
+    position: absolute;
+    padding: 0.5rem 2.5rem;
+    background-color: white;
+    color: black;
+    top: 50%;
+    left: 50%;
+    font-size: 3.5rem;
+    transform: translateX(-50%) ;
+    font-weight: 600;
+}
+
+.load-more{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 30px;
+}
+.load-more .btn{
+    padding: 15px;
+      border-radius: 5px;
+      background: #faf3f3;
+      border: none;
+      color: rgb(16, 16, 16);
+      text-decoration: none;
+}
